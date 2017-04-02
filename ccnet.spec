@@ -5,7 +5,7 @@
 Summary:	A framework for writing networked applications in C
 Name:		ccnet
 Version:	5.1.2
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Libraries
 Source0:	https://github.com/haiwen/ccnet/archive/v%{version}/%{name}-%{version}.tar.gz

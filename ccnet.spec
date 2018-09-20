@@ -4,12 +4,12 @@
 
 Summary:	A framework for writing networked applications in C
 Name:		ccnet
-Version:	5.1.2
-Release:	3
+Version:	6.1.8
+Release:	1
 License:	GPL v3
 Group:		Libraries
 Source0:	https://github.com/haiwen/ccnet/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	96e311d211c463c0dbd8cf46d48d1d6d
+# Source0-md5:	4bab2537f68070d5af226fc80b79c859
 Patch0:		codegen.patch
 URL:		https://github.com/haiwen/ccnet
 BuildRequires:	autoconf
@@ -96,18 +96,16 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.markdown HACKING COPYRIGHT LICENCE.txt
+%doc README.markdown HACKING LICENSE.txt
 %attr(755,root,root) %{_libdir}/libccnet.so.*.*.*
 %ghost %{_libdir}/libccnet.so.0
 %attr(755,root,root) %{_bindir}/ccnet
 %attr(755,root,root) %{_bindir}/ccnet-init
-%attr(755,root,root) %{_bindir}/ccnet-servtool
-%attr(755,root,root) %{_bindir}/ccnet-tool
 %{py_sitedir}/ccnet
 
 %files devel
 %defattr(644,root,root,755)
-%doc LICENCE.txt
+%doc LICENSE.txt
 %{_includedir}/ccnet.h
 %{_includedir}/ccnet
 %{_libdir}/libccnet.so

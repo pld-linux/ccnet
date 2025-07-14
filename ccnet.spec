@@ -58,7 +58,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 # meh is this?
 sed -i -e 's/(DESTDIR)//' libccnet.pc.in
